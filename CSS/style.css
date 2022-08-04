@@ -1,0 +1,562 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    border-bottom: 2px solid #233c7b;
+    background-color: #fff;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #233c7b;
+}
+.logo-img{
+    width: 100px;
+    margin-right: 10px;
+}
+.course-icon{
+    width: 20px;
+}
+.nav-first{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-top: 10px;
+}
+.nav-second{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around; */
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+
+}
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.menu-list >.list-item >a{
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+}
+.course{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    border-right: 2px solid #233c7b;
+}
+.course >a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+.search-icon{
+    width: 20px;
+}
+.search-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    width: 300px;
+    height: 30px;
+}
+.search-box >input{
+    width: 90%;
+    border: none;
+    height: 28px;
+}
+.signin-btn ,.signup-btn ,.main-btn{
+    background-color: #233c7b;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 8px;
+    border: 1px solid #233c7b;
+    cursor: grab;
+}
+.main-btn:hover{
+    background-color: #F7CD2E;
+}
+.signin-btn:hover{
+    background-color: #F7CD2E;
+}
+.signup-btn:hover{
+    background-color: #F7CD2E;
+    color: #FFFFFF;
+}
+.signup-btn{
+    background-color: transparent;
+    padding: 8px 25px;
+    color: #233c7b;
+    border: 1px solid #233c7b;
+}
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+}
+.main-img{
+    width: 600px;
+    margin-top: 5px;
+}
+.line{
+    width: 100px;
+    height: 5px;
+    background-color: #F7CD2E;
+}
+.main-heading{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+span{
+    font-size: 3rem;
+    color: #233c7b;
+    font-weight: bolder;
+}
+
+/* Course category CSS start here */
+.category-img{
+    width: 60px;
+    height: 60px;
+    object-fit: fill;
+    object-position: center;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.category-section{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.top-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.section-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    cursor: grab;
+    background-color: #dfdcdc;
+}
+.section-btn >h3{
+    font-size: 0.8rem;
+    color: #233c7b;
+    margin-right: 5px;
+}
+.section-btn:hover{
+    background-color: #F7CD2E;
+}
+.section-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.category-card{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 180px;
+    height: 65px;
+    margin-bottom: 40px;
+    cursor: grab;
+    padding-left: 2px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform .2s;
+}
+.category-card:hover{
+    background-color: #F7CD2E;
+    transform: scale(1.2);
+}
+
+/* Milestone counter section css start here */
+.milestone-conatiner{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    background-color: #fff;
+}
+.line2{
+    width: 200px;
+    height: 5px;
+    margin-top: 5px;
+    background-color: #F7CD2E;
+}
+.heading-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.milestone-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.milestone-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.milestone_icon{
+    width: 90px;
+    height: 90px;
+    background-color: #d4d1d1;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.milestone_counter
+{
+	font-size: 1.4rem;
+	font-weight: 500;
+	color: #233c7b;
+}
+.mile-text{
+    color: black;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+/* Avengers heading before actual card div */
+.Avenger-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+    margin-top: 50px;
+}
+
+/* Course conatiner */
+.course-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.course-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+}
+.course-heading{
+    font-size: 1.4rem;
+}
+.head-btn-div{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+    background-color: #dfdcdc;
+    cursor: grab;
+}
+.head-btn-div:hover{
+    background-color: #F7CD2E;
+}
+.head-btn-div>h2{
+    font-size: 0.9rem;
+    color: #233c7b;
+}
+.course-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-wrap: wrap;
+}
+.course-img{
+    width: 210px;
+    height: 100px;
+    object-fit: fill;
+    border-radius: 8px;
+}
+.course-card{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 5px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: grab;
+    transition: transform .2s;
+}
+.course-card:hover{
+    transform: scale(1.1);
+}
+.course-detail{
+    display: flex;
+    flex-direction: column;
+}
+.course-name{
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.mentor-name{
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.price-div{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.live-btn{
+    padding: 0px 2px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #233c7b;
+}
+.card7 >.course-detail >.mentor-name{
+    margin-top: 20px;
+}
+.card3 >.course-detail >.price-div{
+    margin-top: 40px;
+}
+.card4 >.course-detail >.price-div{
+    margin-top: 20px;
+}
+.card5 >.course-detail >.price-div{
+    margin-top: 40px;
+}
+.card6 >.course-detail >.price-div{
+    margin-top: 40px;
+}
+.card7 >.course-detail >.price-div{
+    margin-top: 50px;
+}
+.card8 >.course-detail >.price-div{
+    margin-top: 40px;
+}
+/* Hall of fame heading section */
+.hall-of-fame-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* hackathon heading */
+.hackathon-haeding{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+}
+/* our product section css */
+.product-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-haeding{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.product-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.product-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.para-change{
+    margin-top: 20px;
+}
+.heading-change{
+    margin-top: 20px;
+}
+/* footer section */
+.footer-section{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #233c7b;
+}
+.footer-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-list >h2{
+    margin-bottom: 10px;
+}
+.nav-list >a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:665px) {
+    .course-img{
+        width: 180px;
+        height: 100px;
+    }
+    .course-card{
+        width: 200px;
+    }
+    .card1 >.course-detail >.price-div{
+        margin-top: 2px;
+    }
+    .card3 >.course-detail >.price-div{
+        margin-top: 7px;
+    }
+    .card5 >.course-detail >.price-div{
+        margin-top: 7px;
+    }
+    .card7 >.course-detail >.price-div{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width:610px){
+    .c_row2{
+        display: none;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-img{
+        width: 500px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width:400px){
+    .card4{
+        display: none;
+    }
+    .category-card2{
+        display: none;
+    }
+    .main-img{
+        width: 400px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width:840px){
+    .nav-second{
+        display: none;
+    }
+}
