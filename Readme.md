@@ -6,5 +6,6 @@
  2. Project submission date was Aug 4, 2022, 06:00 PM
  3. So it was six day long challenge.
  4. 280+  Participants registered for the hackathon.
- 
+
+[Project Live Link](https://ineuron-hackathon-mu.vercel.app/)
  
